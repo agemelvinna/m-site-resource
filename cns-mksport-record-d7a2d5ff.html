@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mk体育 · 简明指南与访问提醒</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f9f7f4;
+      color: #1e1c1a;
+      line-height: 1.65;
+      padding: 0 1rem;
+    }
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.5rem 0 3rem;
+    }
+
+    /* hero */
+    .hero {
+      padding: 2.8rem 2rem;
+      background: #f1ede6;
+      border-radius: 2rem;
+      margin-bottom: 3.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      text-align: left;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 450;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: #2a2724;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #5b554e;
+      max-width: 600px;
+    }
+    .hero .sub strong {
+      color: #3a3530;
+      font-weight: 500;
+    }
+
+    /* 引用块 / 提示框 */
+    .notice-box {
+      background: #efebe5;
+      border-left: 5px solid #b0a89b;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0 2.4rem;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.98rem;
+      color: #3b3631;
+    }
+    .notice-box strong {
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 0.3rem;
+    }
+
+    /* 通用区块 */
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.65rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid #ddd6cc;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+      color: #2c2824;
+    }
+    p, li {
+      margin-bottom: 0.85rem;
+      color: #2f2b27;
+    }
+    ul {
+      padding-left: 1.3rem;
+      list-style: none;
+    }
+    ul li {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 0.65rem;
+    }
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: #9e948a;
+      font-weight: 600;
+    }
+
+    /* 特点卡片 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+    .feature-card {
+      background: #f5f1eb;
+      padding: 1.2rem 1.3rem;
+      border-radius: 1.2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .feature-card h3 {
+      font-size: 1.1rem;
+      font-weight: 480;
+      margin-bottom: 0.3rem;
+      color: #2b2722;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #4c4640;
+    }
+
+    /* faq 摘要 */
+    .faq-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e5ddd3;
+    }
+    .faq-item:last-child {
+      border-bottom: 0;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #2d2925;
+      margin-bottom: 0.2rem;
+    }
+    .faq-a {
+      font-size: 0.95rem;
+      color: #55504a;
+    }
+
+    /* 底部 */
+    .footer-links {
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #ddd6cc;
+      font-size: 0.9rem;
+      color: #69625b;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+    }
+    .footer-links a {
+      color: #4f4842;
+      text-decoration: none;
+      border-bottom: 1px solid #cfc6bc;
+      transition: border-color 0.15s;
+    }
+    .footer-links a:hover {
+      border-color: #6b6259;
+    }
+
+    a {
+      color: #3f3a35;
+      text-decoration: underline 1px solid #b7aea3;
+      text-underline-offset: 0.2em;
+    }
+
+    /* 响应式 */
+    @media (max-width: 580px) {
+      .hero h1 { font-size: 2rem; }
+      .hero { padding: 2rem 1.2rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .page { padding: 1.8rem 0 2rem; }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2dad1;
+      margin: 2rem 0 1.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>mk体育 · 简明使用指南</h1>
+    <div class="sub">
+      面向日常浏览与信息获取场景，这里是一份聚焦 <strong>mk体育</strong> 平台功能的快速参考。
+      包含关键入口说明、内容结构梳理以及常见疑问摘要，帮助新用户更高效地定位所需内容。
+    </div>
+  </div>
+
+  <!-- 提示框：访问提醒 -->
+  <div class="notice-box">
+    <strong>🕒 访问提醒</strong> 建议在浏览器地址栏直接输入 <a href="https://cns-mksport.com">mk体育</a> 以获取完整访问路径。部分网络环境下可尝试刷新或更换网络节点。平台未要求注册即可浏览公开内容。
+  </div>
+
+  <!-- 优势区 / 特点 -->
+  <section>
+    <h2>平台内容结构</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>赛事动态</h3>
+        <p>覆盖主流联赛、杯赛及综合性赛事实时信息，数据更新频率较高。</p>
+      </div>
+      <div class="feature-card">
+        <h3>数据参考</h3>
+        <p>提供对阵双方近期表现、交锋记录、基础统计等可参考的赛事数据面板。</p>
+      </div>
+      <div class="feature-card">
+        <h3>信息聚合</h3>
+        <p>将新闻、短讯、比分变动整合至同一信息流，减少多平台切换成本。</p>
+      </div>
+      <div class="feature-card">
+        <h3>界面布局</h3>
+        <p>采用分区式卡片设计，核心赛程与深度内容分栏展示，便于快速扫读。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区 / 使用场景 -->
+  <section>
+    <h2>常见使用场景</h2>
+    <ul>
+      <li>赛前查阅近期交锋走势与联赛积分排名，辅助形成个人观赛预期。</li>
+      <li>赛中快速浏览实时比分、关键事件（进球、红黄牌、换人调整）时间线。</li>
+      <li>赛后回顾比赛统计（控球率、射门次数、角球等），对比实际进程。</li>
+      <li>关注特定球队或联赛的周期表现，利用平台内筛选功能缩小范围。</li>
+    </ul>
+
+    <div class="notice-box" style="margin-top: 1rem;">
+      <strong>📌 说明</strong> 所有公开内容均以平台展示为准，部分板块可能因区域或服务调整发生变化。如遇页面异常，可尝试清除缓存或稍后重试。
+    </div>
+  </section>
+
+  <!-- FAQ 摘要 -->
+  <section>
+    <h2>FAQ 摘要</h2>
+    <div class="faq-item">
+      <div class="faq-q">Q：是否需要注册才能浏览内容？</div>
+      <div class="faq-a">大部分赛程、比分及新闻可在未登录状态下直接查看。部分进阶功能或历史数据检索可能提示登录，以页面实际提示为准。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：移动端适配情况如何？</div>
+      <div class="faq-a">页面采用响应式设计，手机浏览器缩小窗口后可自动调整卡片列数与字号。建议保持系统浏览器为最新版本。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：信息更新延迟大概多久？</div>
+      <div class="faq-a">即时比分类数据通常有 15–30 秒左右延迟，具体视数据源与网络环境而定。赛果与统计在比赛结束后数分钟内稳定。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：遇到打不开或白屏怎么办？</div>
+      <div class="faq-a">首先检查网络连接，其次可尝试使用系统自带无痕模式访问 <a href="https://cns-mksport.com">mk体育</a>。若仍无法加载，可能为临时维护或区域限制。</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- 底部链接 -->
+  <div class="footer-links">
+    <span>服务：<a href="https://cns-mksport.com">mk体育</a></span>
+    <span>内容仅供参考，不构成任何建议</span>
+    <span>版本 · 2025</span>
+  </div>
+
+</div>
+</body>
+</html>
